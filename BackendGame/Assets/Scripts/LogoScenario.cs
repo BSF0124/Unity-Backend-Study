@@ -4,11 +4,14 @@ public class LogoScenario : MonoBehaviour
 {
     [SerializeField]
     private Progress progress;
+    [SerializeField]
+    private SceneNames nextScene;
 
     private void Awake()
     {
         SystemSetup();
     }
+
     private void SystemSetup()
     {
         // 활성화되지 않은 상태에서도 게임이 계속 진행
@@ -28,6 +31,6 @@ public class LogoScenario : MonoBehaviour
     
     private void OnAfterProgress()
     {
-        
+        Utils.LoadScene(nextScene);
     }
 }

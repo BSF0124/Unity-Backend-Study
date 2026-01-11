@@ -6,9 +6,12 @@ public class BackendManager : MonoBehaviour
 
     private void Awake()
     {
+        // Update() 메서드의 Backend.AsyncPoll(); 호출을 위해 오브젝트를 파괴하지 않는다
+        DontDestroyOnLoad(gameObject);
         // 뒤끝 서버 초기화
         BackendSetup();
     }
+
     private void BackendSetup()
     {
         // 뒤끝 초기화
