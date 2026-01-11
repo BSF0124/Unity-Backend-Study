@@ -1,6 +1,6 @@
 # unity-backend-study
 
-본 레포지토리는 유튜브 강의 **「뒤끝(Backend)을 이용한 온라인 게임 제작」**을 수강하며  
+본 레포지토리는 유튜브 강의 「뒤끝(Backend)을 이용한 온라인 게임 제작」을 수강하며  
 Unity 기반 온라인 게임 개발과 Backend 연동을 학습한 내용을 정리한 개인 학습 프로젝트입니다.
 
 ---
@@ -16,20 +16,18 @@ Unity 기반 온라인 게임 개발과 Backend 연동을 학습한 내용을 �
 
 ## 🛠 사용 기술
 
-- **Game Engine**
+- Game Engine
   - Unity
 
-- **Backend**
+- Backend
   - 뒤끝
 
-- **Language**
+- Language
   - C#
 
 ---
 
 ## 📚 참고 강의
-
-- 유튜브 플레이리스트  
   **뒤끝(Backend)을 이용한 온라인 게임 제작**  
   https://youtube.com/playlist?list=PLC2Tit6NyVic7IwurqCebK8JscQfbH4ey
 
