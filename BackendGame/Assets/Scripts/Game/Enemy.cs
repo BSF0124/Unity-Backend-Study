@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField]
+    private int scorePoint = 100;
+    [SerializeField]
+    private GameObject explosionPrefab;
     private GameController gameController;
 
     public void Setup(GameController gameController)
@@ -11,6 +15,8 @@ public class Enemy : MonoBehaviour
 
     public void OnDie()
     {
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        gameController.Score += scorePoint;
         Destroy(gameObject);
     }
 

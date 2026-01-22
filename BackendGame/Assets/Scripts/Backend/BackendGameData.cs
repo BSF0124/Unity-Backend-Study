@@ -42,7 +42,8 @@ public class BackendGameData
             {"experience", userGameData.experience},
             {"gold", userGameData.gold},
             {"jewel", userGameData.jewel},
-            {"heart", userGameData.heart}
+            {"heart", userGameData.heart},
+            {"dailyBestScore", userGameData.dailyBestScore}
         };
         // 첫 번째 매개변수는 뒤끝 콘솔의 "게임 정보 관리" 탭에 생성한 테이블 이름
         Backend.GameData.Insert("USER_DATA", param, callback =>
@@ -94,6 +95,7 @@ public class BackendGameData
                         userGameData.gold = int.Parse(gameDataJson[0]["gold"].ToString());
                         userGameData.jewel = int.Parse(gameDataJson[0]["jewel"].ToString());
                         userGameData.heart = int.Parse(gameDataJson[0]["heart"].ToString());
+                        userGameData.dailyBestScore = int.Parse(gameDataJson[0]["dailyBestScore"].ToString());
                         
                         onGameDataLoadEvent?.Invoke();
                     }
@@ -127,11 +129,12 @@ public class BackendGameData
 
         Param param = new Param()
 		{
-			{ "level", userGameData.level },
-			{ "experience", userGameData.experience },
-			{ "gold", userGameData.gold },
-			{ "jewel", userGameData.jewel },
-			{ "heart", userGameData.heart },
+			{"level", userGameData.level},
+			{"experience", userGameData.experience},
+			{"gold", userGameData.gold},
+			{"jewel", userGameData.jewel},
+			{"heart", userGameData.heart},
+            {"dailyBestScore", userGameData.dailyBestScore}
 		};
 
         // 게임 정보에 고유값(gameDataRowInDate)이 없으면 에러 메시지 출력

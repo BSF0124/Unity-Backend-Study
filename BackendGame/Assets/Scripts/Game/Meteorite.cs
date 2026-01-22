@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Meteorite : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject explosionPrefab;
     private GameController gameController;
 
     public void Setup(GameController gameController)
@@ -13,6 +15,8 @@ public class Meteorite : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
             gameController.GameOver();
         }
     }
