@@ -57,6 +57,8 @@ public class Login : LoginBase
 			{
 				SetMessage($"{inputFieldID.text}님 환영합니다.");
 
+				BackendChartData.LoadAllChart();
+
 				Utils.LoadScene(SceneNames.Lobby);
 			}
 			// 로그인 실패

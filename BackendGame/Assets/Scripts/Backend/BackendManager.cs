@@ -3,7 +3,6 @@ using BackEnd;  // 뒤끝 SDK
 
 public class BackendManager : MonoBehaviour
 {
-
     private void Awake()
     {
         // Update() 메서드의 Backend.AsyncPoll(); 호출을 위해 오브젝트를 파괴하지 않는다

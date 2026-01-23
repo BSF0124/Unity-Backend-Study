@@ -974,6 +974,7 @@ GameObject:
   - component: {fileID: 991025885}
   - component: {fileID: 991025887}
   - component: {fileID: 991025888}
+  - component: {fileID: 991025889}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1044,6 +1045,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 991025889}
+        m_TargetAssemblyTypeName: LevelSystem, Assembly-CSharp
+        m_MethodName: Process
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dailyRank: {fileID: 991025888}
 --- !u!4 &991025886
 Transform:
@@ -1088,6 +1101,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6719b0e23d45594fad33715388b7387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &991025889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991025884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9a343b2dd55fc43805e948bc6b9e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1188628739
